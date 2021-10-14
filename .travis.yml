@@ -1,0 +1,13 @@
+sudo: false
+
+language: perl6
+
+perl6:
+    - latest
+    - '2018.06'
+
+install:
+    - rakudobrew build zef
+
+script:
+    - make test
